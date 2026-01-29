@@ -1,0 +1,29 @@
+{
+  "name": "bsre-ui-kit",
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/bsre-ui-kit.umd.cjs",
+  "module": "./dist/bsre-ui-kit.js",
+  "exports": {
+    ".": {
+      "import": "./dist/bsre-ui-kit.js",
+      "require": "./dist/bsre-ui-kit.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.5.24"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
+    "vite": "^7.2.4"
+  }
+}

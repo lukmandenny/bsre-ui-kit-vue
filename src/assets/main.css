@@ -1,0 +1,14 @@
+:root {
+  /* Foundation: Warna Primer BSRE */
+  --bsre-primary: #2faae1;
+  --bsre-primary-hover: #268dbb;
+
+  /* Foundation: Spacing & Radius */
+  --bsre-radius: 6px; /* Standar radius agar konsisten */
+  --bsre-font-main: 'DM Sans', sans-serif; /* Persiapan font DM Sans */
+
+  /* Foundation: Functional Colors */
+  --bsre-success: #4caf50;
+  --bsre-warning: #ff9800;
+  --bsre-danger: #f44336;
+}
