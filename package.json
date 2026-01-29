@@ -1,6 +1,6 @@
 {
   "name": "bsre-ui-kit",
-  "version": "0.0.1",
+  "version": "1.0.0-alpha.1",
   "type": "module",
   "files": [
     "dist"
@@ -25,5 +25,8 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.1",
     "vite": "^7.2.4"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
   }
 }

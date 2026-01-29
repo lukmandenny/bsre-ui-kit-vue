@@ -1,6 +1,18 @@
-# Vue 3 + Vite
+# BSRE UI Kit 🚀
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+**BSRE UI Kit** adalah library komponen Vue 3 yang dibangun untuk menstandardisasi antarmuka aplikasi di ekosistem BSRE (seperti BeSign dan BEAT). Library ini dikembangkan berdasarkan hasil audit UI untuk memastikan konsistensi visual dan mengatasi masalah fungsional seperti tombol yang tidak proporsional.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
-# bsre-ui-kit-vue
+## ✨ Fitur Utama (v1.0.0-alpha)
+
+- **Anti-Gepeng Buttons**: Komponen tombol dengan standar tinggi (_height_) yang konsisten: **Medium (40px)** dan **Small (32px)**.
+- **Atomic Design Structure**: Organisasi folder yang sistematis (Atoms, Molecules, Organisms) untuk skalabilitas jangka panjang.
+- **Foundation Ready**: Terintegrasi dengan warna primer **#2faae1** dan persiapan font **DM Sans**.
+- **Scoped Styling**: Gaya komponen tidak akan merusak CSS di aplikasi utama Anda.
+
+## 📦 Instalasi
+
+Gunakan npm untuk menginstal library ke dalam project Anda:
+
+```bash
+npm install bsre-ui-kit
+```
