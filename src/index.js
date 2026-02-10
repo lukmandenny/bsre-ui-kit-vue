@@ -1,12 +1,26 @@
+// 1. Import Komponen
 import BaseButton from './atoms/BaseButton.vue';
-import './assets/main.css'; // Memastikan warna #2faae1 dan font DM Sans ikut terbawa
 
-// Ekspor komponen secara individual
+// 2. Import CSS (Wajib agar Tailwind terbawa)
+import './assets/main.css';
+
+// 3. Kumpulkan komponen dalam satu objek (untuk looping installer)
+const components = {
+  BaseButton,
+  NavbarItem,
+};
+
+// 4. Export Satuan (Named Export)
+// Memungkinkan user import spesifik: import { BaseButton } from 'bsre-ui-kit'
 export { BaseButton };
 
-// Ekspor plugin untuk instalasi global (app.use)
+// 5. Export Plugin (Default Export)
+// Memungkinkan user install global: app.use(BsreUiKit)
 export default {
   install: (app) => {
-    app.component('BaseButton', BaseButton);
+    // Loop semua komponen dan daftarkan ke Vue
+    for (const prop in components) {
+      app.component(prop, components[prop]);
+    }
   },
 };

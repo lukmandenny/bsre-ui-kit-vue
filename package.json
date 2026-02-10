@@ -1,6 +1,6 @@
 {
   "name": "bsre-ui-kit",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.4",
   "type": "module",
   "files": [
     "dist"
@@ -12,7 +12,7 @@
       "import": "./dist/bsre-ui-kit.js",
       "require": "./dist/bsre-ui-kit.umd.cjs"
     },
-    "./style.css": "./dist/style.css"
+    "./style.css": "./dist/bsre-ui-kit.css"
   },
   "scripts": {
     "dev": "vite",
@@ -20,10 +20,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.5.24"
+    "vue": "^3.0.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.1",
+    "autoprefixer": "^10.4.24",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
     "vite": "^7.2.4"
   },
   "peerDependencies": {
