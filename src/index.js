@@ -7,7 +7,6 @@ import './assets/main.css';
 // 3. Kumpulkan komponen dalam satu objek (untuk looping installer)
 const components = {
   BaseButton,
-  NavbarItem,
 };
 
 // 4. Export Satuan (Named Export)

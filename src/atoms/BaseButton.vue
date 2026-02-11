@@ -14,6 +14,14 @@ const props = defineProps({
         'warning',
         'ghost',
         'outline',
+        'outline-primary',
+        'outline-danger',
+        'ghost-primary',
+        'ghost-danger',
+        'outline-white',
+        'ghost-white',
+        'white',
+        'white-neutral',
       ].includes(value),
   },
   size: {
@@ -51,20 +59,51 @@ const classes = computed(() => {
 
   // 1. Variants (Sesuaikan ring color dengan brand)
   const variants = {
+    // --- SOLID ---
     primary:
-      'bg-bsre-blue text-white hover:bg-bsre-blue-dark  border border-transparent',
+      'bg-bsre-blue text-white hover:bg-bsre-blue-dark border border-transparent',
     secondary:
-      'bg-bsre-blue-lightest text-bsre-blue hover:bg-bsre-blue-lighter  border border-transparent',
+      'bg-bsre-blue-lightest text-bsre-blue hover:bg-bsre-blue-lighter border border-transparent',
     danger:
-      'bg-bsre-red text-white hover:bg-bsre-red-dark  border border-transparent',
+      'bg-bsre-red text-white hover:bg-bsre-red-dark border border-transparent',
     success:
-      'bg-bsre-green text-white hover:bg-bsre-green-dark  border border-transparent',
+      'bg-bsre-green text-white hover:bg-bsre-green-dark border border-transparent',
     warning:
       'bg-bsre-yellow text-white hover:bg-bsre-yellow-dark border border-transparent',
+
+    // --- NEUTRAL (Original) ---
     ghost:
-      'bg-transparent text-bsre-text-primary hover:bg-bsre-gray/10  border border-transparent',
+      'bg-transparent text-bsre-text-primary hover:bg-bsre-gray/10 border border-transparent',
     outline:
-      'bg-transparent border border-bsre-gray/30 text-bsre-text-primary hover:bg-bsre-gray/5 ',
+      'bg-transparent border border-bsre-gray/30 text-bsre-text-primary hover:bg-bsre-gray/5',
+
+    // --- COLORED OUTLINE (Baru) ---
+    'outline-primary':
+      'bg-transparent border border-bsre-blue text-bsre-blue hover:bg-bsre-blue/10',
+    'outline-danger':
+      'bg-transparent border border-bsre-red text-bsre-red hover:bg-bsre-red/10',
+
+    // --- COLORED GHOST (Baru) ---
+    'ghost-primary':
+      'bg-transparent text-bsre-blue hover:bg-bsre-blue-lightest border border-transparent',
+    'ghost-danger':
+      'bg-transparent text-bsre-red hover:bg-bsre-red/10 border border-transparent',
+
+    // --- WHITE VARIANTS (Khusus Background Gelap) ---
+    'outline-white':
+      'bg-transparent border border-white text-white hover:bg-white/10 focus:ring-white/30',
+
+    'ghost-white':
+      'bg-transparent text-white hover:bg-white/10 border border-transparent focus:ring-white/30',
+
+    // --- WHITE (Brand Color) ---
+    white:
+      'bg-white text-bsre-blue hover:bg-slate-50 border border-transparent ',
+
+    // --- WHITE NEUTRAL (Baru) ---
+    // Putih bersih, Teks gelap (Primary), Border tipis abu-abu biar kelihatan batasnya
+    'white-neutral':
+      'bg-white text-bsre-text-primary hover:bg-slate-50 border border-transparent ',
   };
 
   // 2. Sizes (ADAPTASI FLOWBITE)
