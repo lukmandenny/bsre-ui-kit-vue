@@ -1,6 +1,6 @@
 {
   "name": "bsre-ui-kit",
-  "version": "1.0.0-alpha.4",
+  "version": "0.0.1",
   "type": "module",
   "files": [
     "dist"

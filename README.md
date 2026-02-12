@@ -1,18 +1,46 @@
-# BSRE UI Kit 🚀
+# BSrE Design System (Vue 3 + Tailwind)
 
-**BSRE UI Kit** adalah library komponen Vue 3 yang dibangun untuk menstandardisasi antarmuka aplikasi di ekosistem BSRE (seperti BeSign dan BEAT). Library ini dikembangkan berdasarkan hasil audit UI untuk memastikan konsistensi visual dan mengatasi masalah fungsional seperti tombol yang tidak proporsional.
+UI Kit resmi untuk pengembangan aplikasi di lingkungan BSrE. Dibangun menggunakan **Vue 3** dan **Tailwind CSS**, menyediakan komponen yang aksesibel, konsisten, dan siap pakai sesuai standar SPBE.
 
-## ✨ Fitur Utama (v1.0.0-alpha)
+## 📦 Fitur
 
-- **Anti-Gepeng Buttons**: Komponen tombol dengan standar tinggi (_height_) yang konsisten: **Medium (40px)** dan **Small (32px)**.
-- **Atomic Design Structure**: Organisasi folder yang sistematis (Atoms, Molecules, Organisms) untuk skalabilitas jangka panjang.
-- **Foundation Ready**: Terintegrasi dengan warna primer **#2faae1** dan persiapan font **DM Sans**.
-- **Scoped Styling**: Gaya komponen tidak akan merusak CSS di aplikasi utama Anda.
+- ⚡ **Vue 3 Support:** Kompatibel penuh dengan Vue 3 (Composition API).
+- 🎨 **Tailwind CSS:** Styling modern, ringan, dan mudah dikustomisasi.
+- 🧩 **Atomic Design:** Struktur modular mulai dari Atom, Molekul, hingga Organisme.
 
-## 📦 Instalasi
+---
 
-Gunakan npm untuk menginstal library ke dalam project Anda:
+## 🚀 Instalasi
+
+### Menggunakan NPM (Recommended)
+
+Jika library sudah dipublish ke registry NPM:
 
 ```bash
 npm install bsre-ui-kit
+```
+
+## 🛠 Konfigurasi Project
+
+### Agar komponen dapat digunakan dan styling-nya muncul dengan benar, kamu wajib mendaftarkannya di entry point aplikasi (biasanya main.js atau main.ts).
+
+Update src/main.js
+
+```bash
+import { createApp } from 'vue'
+import App from './App.vue'
+
+// 1. Import Library Plugin
+import BSrEUiKit from 'bsre-ui-kit'
+
+// 2. WAJIB: Import File CSS (Hasil Build)
+// File ini berisi semua utility class Tailwind yang digunakan oleh komponen
+import 'bsre-ui-kit/dist/style.css'
+
+const app = createApp(App)
+
+// 3. Gunakan sebagai Plugin Global
+app.use(BSrEUiKit)
+
+app.mount('#app')
 ```
