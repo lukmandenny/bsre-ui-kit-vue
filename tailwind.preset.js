@@ -133,7 +133,7 @@ module.exports = {
 
       // 3. Text Color
       textColor: {
-        primary: '#0F172AE6', // 90%
+        main: '#0F172AE6', // 90%
         secondary: '#0F172AB3', // 70%
         muted: '#0F172A80', // 50%
         placeholder: '#0F172A59', // 35%
