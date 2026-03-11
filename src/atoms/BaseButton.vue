@@ -9,6 +9,7 @@ const props = defineProps({
       [
         'primary',
         'secondary',
+        'secondary-blue',
         'danger',
         'success',
         'warning',
@@ -63,6 +64,8 @@ const classes = computed(() => {
     primary:
       'bg-bsre-blue text-white hover:bg-bsre-blue-dark border border-transparent',
     secondary:
+      'bg-gray-100 text-bsre-text-primary hover:bg-gray-200 border border-transparent',
+    'secondary-blue':
       'bg-bsre-blue-lightest text-bsre-blue hover:bg-bsre-blue-lighter border border-transparent',
     danger:
       'bg-bsre-red text-white hover:bg-bsre-red-dark border border-transparent',
@@ -75,13 +78,13 @@ const classes = computed(() => {
     ghost:
       'bg-transparent text-bsre-text-primary hover:bg-bsre-gray/10 border border-transparent',
     outline:
-      'bg-transparent border border-bsre-gray/30 text-bsre-text-primary hover:bg-bsre-gray/5',
+      'bg-transparent border border-solid border-gray-300 text-bsre-text-primary hover:bg-gray-50 active:bg-gray-100',
 
     // --- COLORED OUTLINE (Baru) ---
     'outline-primary':
-      'bg-transparent border border-bsre-blue text-bsre-blue hover:bg-bsre-blue/10',
+      'bg-transparent border border-solid border-bsre-blue text-bsre-blue hover:bg-bsre-blue/10',
     'outline-danger':
-      'bg-transparent border border-bsre-red text-bsre-red hover:bg-bsre-red/10',
+      'bg-transparent border border-solid border-bsre-red text-bsre-red hover:bg-bsre-red/10',
 
     // --- COLORED GHOST (Baru) ---
     'ghost-primary':
@@ -91,7 +94,7 @@ const classes = computed(() => {
 
     // --- WHITE VARIANTS (Khusus Background Gelap) ---
     'outline-white':
-      'bg-transparent border border-white text-white hover:bg-white/10 focus:ring-white/30',
+      'bg-transparent border border-solid  border-white text-white hover:bg-white/10 focus:ring-white/30',
 
     'ghost-white':
       'bg-transparent text-white hover:bg-white/10 border border-transparent focus:ring-white/30',
