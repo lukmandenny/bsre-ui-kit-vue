@@ -1,6 +1,6 @@
 # BSrE UI Kit
 
-Pustaka komponen antarmuka (UI Component Library) resmi untuk ekosistem aplikasi digital **Balai Sertifikasi Elektronik (BSrE)**. Dibangun di atas **Vue 3** dan **Tailwind CSS**, pustaka ini menjamin konsistensi visual, aksesibilitas, dan mempercepat proses *development* antarmuka pengguna.
+Pustaka komponen antarmuka (UI Component Library) resmi untuk ekosistem aplikasi digital **Balai Besar Sertifikasi Elektronik (BSrE)**. Dibangun di atas **Vue 3** dan **Tailwind CSS**, pustaka ini menjamin konsistensi visual, aksesibilitas, dan mempercepat proses *development* antarmuka pengguna.
 
 ---
 
